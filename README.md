@@ -49,19 +49,35 @@ MOV und weitere Binärbefehle
      NREG, in binär dann: 01001110
 
 **MOV/MV**
-[ SOON ]
+
+Wie oben schon gezeigt, wird der MOV Befehl zuletzt angegeben. Zuerst kommt die Speicherzelle, dann der Wert und dann MOV, alles in binär natürlich. Wenn wir nun ein kleines "a" in die Zelle RA schreiben wollen, tuen wir dies so:
+
+     (ZELLE)  (WERT)   (MOV)   
+    01011001 01001000 00011000
+    
+Schreiben wir dies (ohne "(ZELLE)  (WERT)   (MOV)" natürlich), wird in Zelle RA ein kleines A geschrieben.
+Wie wir dies dann ausgeben, wird im nächsten Schritt gezeigt.
 
 **SY und OUT**
-[ SOON ]
 
+Um nun das "a" aus Register RA zu lesen, müssen wir zuerst ein paar Dinge tun. Am Anfang wird klargestellt, was das System tun soll (in dem Falle OUT/`10110100`). Dann der Wert (es können auch Register angegeben werden) und zum Schluss SY selbst:
+
+			(OUT) (WERT/ZELLE) (SY)
+    10110100 01011001 00010001
 
 **NREG**
-NREG ist dazu da, um Nachrichten (wenn Register einenneuen Wert erhalten) zu unterdrücken. Schreibt man diesen Binär-Befehl (in binär) am Anfang einer Datei, so wird er alle Ausgaben Blocken. Dies ist im Programmverlauf nicht mehr aufzuheben.
+NREG ist dazu da, um Nachrichten (wenn Register einenneuen Wert erhalten) zu unterdrücken. Schreibt ma diesen Binär-Befehl (in binär) am Anfang einer Datei, so wird er alle Ausgaben Blocken. Dies ist im Programmverlauf nicht mehr aufzuheben.
 
 **DEBG**
 DEBG verhindert das die eingegebenen Binärzahl, die in eine Dezimalzahl umgerechnet wurde, ausgegeben wird. Am Anfang einer Datei kann dies doch manchmal sehr nützlich, sowie auch schädlich (Fehlerbehebung) sein. Dies ist im Programmverlauf nicht mehr aufzuheben.
 
-Weitere Befehle werden bals hinzugefügt! Dazu gehören dann:
+####**Sonnstiges**
+
+**Bitte beachten:** Das Nutzen von **einem** Leerzeichen ist am besten um die Zahlen zu trennen. Zwei Leerzeichen werden vom Interpreter nicht tolleriert! Genausowenig wie Binärzahlen die größer oder kleiner als 8 sind(außer es steht ein @(neue Zeile) davor).
+
+Falls ein "@" im Quellcode stehen sollte, steht dies für eine neue Zeile. Dies wurde zur Einfacheit eingebaut. "@" darf vor einer Zahl oder alleine, aber niemals nach einer Zahl (also nicht "00000000@", sondern "@00000000" oder nur "@") stehen! Sobald aber nach der Zahk ein Leerzeichen steht("00000000 @"), sollte es wieder klappen.
+ 
+Weitere Befehle und Funkrionen (sowie SY) werden bald hinzugefügt! Dazu gehören dann:
 > Input, 
 > Register in Register verschieben, 
 > weiteres...
