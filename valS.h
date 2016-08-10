@@ -1,6 +1,13 @@
 #ifndef valS
 #define valS
 
+//
+// INFO: Register RA und SB werden bald einen neuen Wert erhalten, sowie NREG und DEBG um das Alphabet komplett 
+// darstellen zu können und keine Fehler zu verursachen!
+//
+// MfG, Survari
+//
+
 #define RAC 89
 #define SBC 88
 #define DFC 172
