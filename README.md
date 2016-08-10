@@ -62,7 +62,7 @@ Wie wir dies dann ausgeben, wird im nächsten Schritt gezeigt.
 
 Um nun das "a" aus Register RA zu lesen, müssen wir zuerst ein paar Dinge tun. Am Anfang wird klargestellt, was das System tun soll (in dem Falle OUT/`10110100`). Dann der Wert (es können auch Register angegeben werden) und zum Schluss SY selbst:
 
-			(OUT) (WERT/ZELLE) (SY)
+     (OUT) (WERT/ZELLE) (SY)
     10110100 01011001 00010001
 
 **NREG**
