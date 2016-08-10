@@ -6,12 +6,17 @@
 #include <fstream>
 #include <sstream>
 
+#ifndef MAIN_C
+#define MAIN_C
 bool db = false;
 bool nr = true;
 
 #include "valS.h"
 #include "tbisys.h"
 using namespace std;
+
+
+int lex(string str, int len, vector<int> dez, int index);
 
 int main(int argc, char* argv[])
 {
@@ -73,3 +78,4 @@ int main(int argc, char* argv[])
 
   return 0;
 }
+#endif

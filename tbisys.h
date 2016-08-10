@@ -1,5 +1,9 @@
 #include <iostream>
 #include <vector>
+
+#ifndef SYS_H
+#define SYS_H
+#include "main.cpp"
 #include "valS.h"
 using namespace std;
 
@@ -183,3 +187,5 @@ int lex(string str, int len, vector<int> dez, int index)
     }
 
 }
+
+#endif
