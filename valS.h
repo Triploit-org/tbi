@@ -13,11 +13,11 @@ int DF;           // 172 OR 10101100 || REG
 int HK;           // 173 OR 10101101 || REG
 int KL;           // 175 OR 10101111 || REG
 
-#define NREG 78   //  78 OR 01001110 || OUTPUT REG
 #define SY 17     //  17 OR 00010001 || SystemCall
 #define MV 24     //  24 OR 00011000 || MOV
 #define OUT 180   // 180 OR 10110100 || OUTPUT STREAM
 
+#define NREG 78   //  78 OR 01001110 || OUTPUT REG
 #define DEBG 81   //  81 OR 01010001 || DEBUG MODE
 #define NL "@"    //   @ OR        @ || NEW LINE
 
