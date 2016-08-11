@@ -11,8 +11,8 @@ Variablen
 
 Variablen werden mit verschiednen Speicherzellen umgesetzt, davon gibt es 5:
 
-     RA, in binär dann: 01011001
-     SB, in binär dann: 01011000
+     RA, in binär dann: 11000111
+     SB, in binär dann: 11011000
      HK, in binär dann: 10101101
      DF, in binär dann: 10101100
      und
