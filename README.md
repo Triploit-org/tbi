@@ -44,9 +44,9 @@ MOV und weitere Binärbefehle
      MOV, in binär dann: 00011000
      SY, in binär dann: 00010001
      OUT, in binär dann: 10110100
-     DEBG, in binär dann: 01010001
+     DEBG, in binär dann: 11010001
      und
-     NREG, in binär dann: 01001110
+     NREG, in binär dann: 11001110
 
 **MOV/MV**
 
