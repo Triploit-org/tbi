@@ -25,7 +25,7 @@ Wenn wir nun in eines dieser Register schreiben wollen, setzen wir dies so um:
 Wenn wir also ein "a" in Zelle RA schreiben wollen, können wir dies so umsetzen:
 
      (ZELLE)  (WERT)   (MOV)   
-    01011001 01001000 00011000
+    11000111 01001000 00011000
 
 Wie wir mit MOV arbeiten, wird später erklärt.
 
@@ -53,7 +53,7 @@ MOV und weitere Binärbefehle
 Wie oben schon gezeigt, wird der MOV Befehl zuletzt angegeben. Zuerst kommt die Speicherzelle, dann der Wert und dann MOV, alles in binär natürlich. Wenn wir nun ein kleines "a" in die Zelle RA schreiben wollen, tuen wir dies so:
 
      (ZELLE)  (WERT)   (MOV)   
-    01011001 01001000 00011000
+    11000111 01001000 00011000
     
 Schreiben wir dies (ohne "(ZELLE)  (WERT)   (MOV)" natürlich), wird in Zelle RA ein kleines A geschrieben.
 Wie wir dies dann ausgeben, wird im nächsten Schritt gezeigt.
@@ -63,7 +63,7 @@ Wie wir dies dann ausgeben, wird im nächsten Schritt gezeigt.
 Um nun das "a" aus Register RA zu lesen, müssen wir zuerst ein paar Dinge tun. Am Anfang wird klargestellt, was das System tun soll (in dem Falle OUT/`10110100`). Dann der Wert (es können auch Register angegeben werden) und zum Schluss SY selbst:
 
      (OUT) (WERT/ZELLE) (SY)
-    10110100 01011001 00010001
+    10110100 11000111 00010001
 
 **NREG**
 NREG ist dazu da, um Nachrichten (wenn Register einenneuen Wert erhalten) zu unterdrücken. Schreibt ma diesen Binär-Befehl (in binär) am Anfang einer Datei, so wird er alle Ausgaben Blocken. Dies ist im Programmverlauf nicht mehr aufzuheben.
